@@ -70,13 +70,13 @@
     function handleSquareClick(square) {
       const count = parseInt(square.dataset.count) || 0;
       square.dataset.count = count + 1;
-      if (count === 0) {
+      if (count == 0) {
         square.style.backgroundColor = 'red';
         square.style.border = '3px solid red';
-      } else if (count === 1) {
+      } else if (count == 1) {
         square.style.border = '3px solid red';
         square.style.backgroundColor = '';
-      } else if (count === 2) {
+      } else if (count == 2) {
         square.dataset.count = 0;
         square.style.border = '3px solid black';
       }
@@ -85,13 +85,13 @@
     function handleSquareRandom(square) {
       const count = Math.floor(Math.random() * 3);
       square.dataset.count = count;
-      if (count === 0) {
+      if (count == 0) {
         square.style.backgroundColor = 'red';
         square.style.border = '3px solid red';
-      } else if (count === 1) {
+      } else if (count == 1) {
         square.style.border = '3px solid red';
         square.style.backgroundColor = '';
-      } else if (count === 2) {
+      } else if (count == 2) {
         square.dataset.count = 0;
         square.style.border = '3px solid black';
       }
