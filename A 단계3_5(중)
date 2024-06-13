@@ -109,7 +109,7 @@
         const leftCount = parseInt(leftSquare.dataset.count) || 0;
         const rightCount = parseInt(rightSquare.dataset.count) || 0;
   
-        if (leftCount !== rightCount) {
+        if (leftCount == rightCount) {
           match = false;
         }
       });
